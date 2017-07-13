@@ -1,4 +1,4 @@
-FROM nginx:mainline-alpine
+FROM nginx:1.13.3-alpine
 
 RUN apk add --update --no-cache \
       dumb-init \
