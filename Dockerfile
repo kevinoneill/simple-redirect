@@ -7,7 +7,7 @@ RUN apk add --update --no-cache \
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-COPY redirect.conf /etc/nginx/nginx-redirect.conf
+COPY nginx-redirect.conf /etc/nginx/nginx-redirect.conf
 
 WORKDIR /opt/simple-redirect
 COPY start.sh ./start.sh
