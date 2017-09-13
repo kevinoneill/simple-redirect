@@ -2,7 +2,7 @@
 
 A simple container to redirect traffic to another server, based on `nginx:mainline-alpine`.
 
-I built this to use inside a kubernetes cluster to route `www.example.com\<path>` to
+I built this to use inside a kubernetes cluster to route `www.example.com/<path>` to
 `example.com/<path>` 
 
 Simple Redirect requires a single environment variable `REDIRECT_SERVER` which is the server
